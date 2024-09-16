@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    font-family: "Rajdhani", sans-serif, "Mina";
+    background-color: #191414;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1db954;
+    /* font-family: "Foldit", sans-serif; */
+    
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.video-item {
+    background: #00000000;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #1db95440;
+    text-align: left;
+    overflow: hidden;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.video-item.highlight {
+    background-color: #ffeb3b; /* Highlight color */
+}
+
+/* Style for clear button (cross icon) */
+.clear-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.clear-button fa-sharp {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video-item:hover:not(.video-item.highlight, .video-item.active ){
+    background: #1db95420;
+    box-shadow: 0 0 20px #1db95440;
+
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    
+    margin: 10px 0 0;
+    text-align: center;
+    color: #4c5a51be;
+    padding: 5px;
+
+}
+
+.video-item.active {
+    background: #1db95447;
+    box-shadow: 0 0 20px #1db954;
+}
+
+.video-item.active p {
+    color: #4c5a51;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #191414;
+
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1db954; 
+  }
+  
+
+  ::selection{
+    color: #191414;
+    background-color: #1db954;
+  }
+
+
+
+
+
+
+
+  .search-container {
+    position: relative;
+}
+
+.search-input {
+    left: 0;
+  width: 400%;
+    padding: 10px 15px;
+    font-size: 16px;
+    left: 50%;
+    border: none;
+    border-bottom: 2px solid #1db95420;
+    background-color: #191414;
+    outline: none;
+    transition: all 0.3s cubic-bezier(1, 0.98, 0, -0.02);
+}
+
+.search-input:focus {
+    border-color: #1db954;
+    color: #4c5a51be;
+}
+
+.search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-button fa-sharp {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+
+
+
